@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+*{
+  margin-top: 0px;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  min-height: 100vh; /* min-h-screen */
+  background-color: #f9fafb; /* bg-gray-50 */ /* p-8 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Wrapper for the content */
+.content-wrapper {
+  max-width: 80rem; /* max-w-7xl */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 90vh;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Title of the app */
+.header-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold; /* font-bold */
+  color: #111827; /* text-gray-900 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.side-map{
+  height: 90vh;
+  display: flex;
+  margin-top: 0px;
+}
+
+/* Adjustments for Clock and Calendar icons */
+.clock-icon {
+  width: 14px;
+  height: 14px;
+  color: #6b7280;
+}
+
+.calendar-icon {
+  width: 14px;
+  height: 14px;
+  color: #6b7280;
 }
